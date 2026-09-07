@@ -1,0 +1,5 @@
+# Code availability statement
+
+The Python code used to generate the age-specific aboveground biomass carbon lookup tables is provided as supplementary material. The script implements the Chapman-Richards growth function and propagates uncertainty in fitted model parameters through Monte Carlo simulation. For each forest region, 1,000 parameter sets are sampled from normal distributions defined by the fitted parameter estimates and their standard errors, and the resulting simulated carbon density values are summarized by stand age. The output consists of region-specific CSV lookup tables containing forest age, mean aboveground biomass carbon density, and the associated standard deviation.
+
+The code was written in Python and requires only the `numpy` and `pandas` packages. A requirements file and a parameter template are provided to facilitate reproducibility. The random seed is fixed by default to ensure that the lookup tables can be regenerated exactly, unless users intentionally change the seed or simulation settings.
