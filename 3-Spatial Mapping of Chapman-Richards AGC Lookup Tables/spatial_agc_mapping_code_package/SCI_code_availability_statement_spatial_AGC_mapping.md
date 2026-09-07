@@ -1,0 +1,5 @@
+## Code availability
+
+The spatial raster mapping code used to generate the aboveground carbon density and uncertainty maps is provided as supplementary material. The workflow maps region-specific Chapman-Richards age-carbon lookup tables to raster pixels using a forest ecoregion raster and a stand-age raster. For each valid pixel, the corresponding ecoregion code is used to select the appropriate lookup table, and the pixel-level stand age is used to assign both the expected aboveground carbon density (`AGC_LUT`) and its lookup-table uncertainty (`AGC_LUT_std`).
+
+The supplied code package includes a documented Python script (`map_agc_lut_to_raster.py`), an editable ecoregion mapping template, a dependency file, and a README file describing input requirements, command-line options, and expected outputs. The script is parameterized to avoid hard-coded local file paths and is designed to reproduce the spatial AGC and uncertainty rasters when the required ecoregion raster, stand-age raster, and regional lookup tables are supplied.
