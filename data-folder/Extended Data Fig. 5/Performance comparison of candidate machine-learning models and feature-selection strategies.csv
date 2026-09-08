@@ -1,0 +1,17 @@
+Model,FeatureSelection,R2,RMSE
+GradientBoosting,VarianceThreshold,0.568661473,23.63013449
+GradientBoosting,SelectKBest,0.568868711,23.6244572
+GradientBoosting,RFE,0.578276962,23.36526607
+GradientBoosting,SelectFromModel,0.582784574,23.24006008
+ExtraTrees,VarianceThreshold,0.537586653,24.4665226
+ExtraTrees,SelectKBest,0.531955,24.61505853
+ExtraTrees,RFE,0.54373507,24.30332038
+ExtraTrees,SelectFromModel,0.541662596,24.35845385
+RandomForest,VarianceThreshold,0.54349397,24.30974072
+RandomForest,SelectKBest,0.546317296,24.23445062
+RandomForest,RFE,0.557445606,23.93538383
+RandomForest,SelectFromModel,0.554133917,24.02477262
+XGBoost,VarianceThreshold,0.565070331,23.72829783
+XGBoost,SelectKBest,0.5898,23.0442
+XGBoost,RFE,0.572601511,23.52196281
+XGBoost,SelectFromModel,0.573887519,23.48654829
